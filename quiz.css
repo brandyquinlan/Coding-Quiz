@@ -1,0 +1,58 @@
+h2 {
+    font-size: 3.7rem;
+}
+
+.choiceContainer {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    width: auto;
+    height: 5rem;
+    font-size: 1.6rem;
+    background-color: #4B0082;
+    color: white;
+    border-radius: 7px;
+}
+
+.choiceContainer:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choiceNumber {
+    border-radius: 7px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 3rem;
+    background-color: #4B0082;
+    color: white;
+}
+
+.choiceText {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: auto;
+    color: white;
+}
+
+
+/* hr {
+    margin-top: 2rem;
+    text-decoration: #333;
+} */
+
+#correctWrong {
+    font-size: 2.6rem;
+    color: #aaa;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin-right: 1rem;
+}

@@ -112,13 +112,12 @@ choices.forEach(choice => {
             correctWrongEL.innerHTML = "Correct!";
         } else {
             correctWrongEL.innerHTML = "Wrong!";
-
-            score = score - 10;
+            timeLeft = timeLeft - 10;
         }
 
 
         if (availableQuestions.length === 0) {
-            score = timeLeft + score;
+            score = timeLeft;
             if (score < 0) { score = 0; }
 
             localStorage.setItem("mostRecentScore", score);

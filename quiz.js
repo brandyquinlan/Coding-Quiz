@@ -77,7 +77,7 @@ function timer() {
             // Decrement `timeLeft` by 1
             timeLeft--;
         } else {
-            return window.location.assign("/endQuiz.html")
+            return window.location.assign("endQuiz.html")
         }
     }, 1000);
 }

@@ -38,13 +38,23 @@ The url for the site is: https://brandyquinlan.github.io/HW04_Coding_Quiz/
 The repo is located here: https://github.com/brandyquinlan/HW04_Coding_Quiz
 
 ## Screenshots of Coding Quiz
+Quiz Home Page:
 ![Screenshot](Quiz_Home.png)
+
+Incorrect Answer:
 ![Screenshot](Quiz_wrong.png)
+
+Correct Answer:
 ![Screenshot](Quiz_correct.png)
+
+Quiz is over after last question or when time runs out:
 ![Screenshot](Quiz_AllDone.png)
+
+Add Initials to record score:
 ![Screenshot](Quiz_Initials.png)
+
+High Scores:
 ![Screenshot](Quiz_Scores.png)
-![Screenshot](Quiz_Home_Highscores_Button.png)
 
 
 

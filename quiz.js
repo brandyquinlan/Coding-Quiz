@@ -123,7 +123,7 @@ choices.forEach(choice => {
             localStorage.setItem("mostRecentScore", score);
 
             //go to the end page
-            return window.location.assign("/endQuiz.html");
+            return window.location.assign("endQuiz.html");
         }
 
 

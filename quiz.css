@@ -1,14 +1,23 @@
 h2 {
-    font-size: 3.7rem;
+    font-size: 3.2rem;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    text-align: center;
+    /* padding: 1rem; */
+    margin-right: 1rem;
 }
 
 .choiceContainer {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
     padding-bottom: 1rem;
-    width: auto;
-    height: 5rem;
-    font-size: 1.6rem;
+    /* width: auto; */
+    height: 4.5rem;
+    font-size: 1.4rem;
     background-color: #4B0082;
     color: white;
     border-radius: 7px;
@@ -33,26 +42,13 @@ h2 {
 .choiceText {
     padding-top: 1rem;
     padding-bottom: 2rem;
-    width: auto;
+    width: 100%;
     color: white;
+    text-align: left;
 }
-
-
-/* hr {
-    margin-top: 2rem;
-    text-decoration: #333;
-} */
 
 #correctWrong {
-    font-size: 2.6rem;
+    background-color: white;
+    font-size: 2.4rem;
     color: #aaa;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 3rem;
-    text-align: center;
-    padding: 1rem;
-    margin-right: 1rem;
 }

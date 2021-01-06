@@ -5,8 +5,7 @@ var currentQuestion = {};
 var acceptingAnswers = false;
 var score = 0;
 var availableQuestions = [];
-var wrongTotal = document.querySelector("wrongAnswers");
-var MAX_QUESTIONS = 6;
+var MAX_QUESTIONS = 7;
 var timeLeft = 75;
 
 
@@ -16,14 +15,6 @@ var questions = [{
         choice2: "<javascript>",
         choice3: "<js>",
         choice4: "<scripting>",
-        answer: 1
-    },
-    {
-        question: "Where is the correct place to insert a JavaScript?",
-        choice1: "Both in the <head> section and the <body> section are correct",
-        choice2: "The <head> section",
-        choice3: "The <body> section",
-        choice4: "The <javascript> section",
         answer: 1
     },
     {
@@ -121,7 +112,7 @@ choices.forEach(choice => {
             correctWrongEL.innerHTML = "Correct!";
         } else {
             correctWrongEL.innerHTML = "Wrong!";
-            wrongTotal++;
+
             score = score - 10;
         }
 
@@ -131,7 +122,6 @@ choices.forEach(choice => {
             if (score < 0) { score = 0; }
 
             localStorage.setItem("mostRecentScore", score);
-            localStorage.setItem("wrongTotal", wrongTotal);
 
             //go to the end page
             return window.location.assign("/endQuiz.html");

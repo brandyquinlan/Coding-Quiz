@@ -30,5 +30,5 @@ saveHighScore = (event) => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
     //go home
-    window.location.assign('https://brandyquinlan.github.io/HW04_Coding_Quiz/highScores.html');
+    window.location.assign("./index.html");
 };

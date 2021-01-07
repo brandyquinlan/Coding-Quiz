@@ -8,7 +8,6 @@ var availableQuestions = [];
 var MAX_QUESTIONS = 7;
 var timeLeft = 75;
 
-
 var questions = [{
         question: "Inside which HTML element do we put the JavaScript??",
         choice1: "<script>",
@@ -68,13 +67,10 @@ startQuiz = () => {
 function timer() {
     var timerEl = document.getElementById("timer");
 
-    // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
+    // Method to call a function to be executed every 1000 milliseconds
     var timeInterval = setInterval(function() {
-        // As long as the `timeLeft` is greater than 1
         if (timeLeft > 1) {
-            // Set the `textContent` of `timerEl` to show the remaining seconds
             timerEl.innerHTML = timeLeft;
-            // Decrement `timeLeft` by 1
             timeLeft--;
         } else {
             return window.location.assign("endQuiz.html")
@@ -82,13 +78,11 @@ function timer() {
     }, 1000);
 }
 
-
 getNewQuestion = () => {
-    correctWrongEL.innerHTML = "";
-
     var questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
+    correctWrongEL.innerHTML = "";
 
     choices.forEach(choice => {
         var number = choice.dataset["number"];
@@ -101,13 +95,13 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener("click", event => {
-
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         var selectedChoice = event.target;
         var selectedAnswer = selectedChoice.dataset["number"];
 
+        // display Correct! or Wrong! depending on answer
         if (selectedAnswer == currentQuestion.answer) {
             correctWrongEL.innerHTML = "Correct!";
         } else {
@@ -115,24 +109,19 @@ choices.forEach(choice => {
             timeLeft = timeLeft - 10;
         }
 
-
         if (availableQuestions.length === 0) {
             score = timeLeft;
             if (score < 0) { score = 0; }
-
             localStorage.setItem("mostRecentScore", score);
-
-            //go to the end page
             return window.location.assign("endQuiz.html");
         }
 
-
+        // delay between questions
         setTimeout(() => {
             getNewQuestion();
         }, 2000);
     });
 });
-
 
 startQuiz();
 timer();

@@ -4,6 +4,7 @@ var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 resetScores.addEventListener("click", function() {
     localStorage.clear();
+    // clear scores list
     highScoresList.innerHTML = "";
 });
 // list high scores with initials

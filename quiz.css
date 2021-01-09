@@ -2,12 +2,13 @@ h2 {
     font-size: 3.2rem;
 }
 
-header {
+#timer {
+    color: black;
     display: flex;
     justify-content: flex-end;
     font-size: 3rem;
     text-align: center;
-    /* padding: 1rem; */
+    padding: 1rem;
     margin-right: 1rem;
 }
 
@@ -15,7 +16,6 @@ header {
     display: flex;
     margin-bottom: 1.8rem;
     padding-bottom: 1rem;
-    /* width: auto; */
     height: 4.5rem;
     font-size: 1.4rem;
     background-color: #4B0082;

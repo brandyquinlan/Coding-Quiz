@@ -6,7 +6,7 @@ var acceptingAnswers = false;
 var score = 0;
 var availableQuestions = [];
 var MAX_QUESTIONS = 7;
-var timeLeft = 75;
+var timeLeft = 74;
 
 var questions = [{
         question: "Inside which HTML element do we put the JavaScript??",

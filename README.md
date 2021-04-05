@@ -1,12 +1,8 @@
-# HW04_Coding_Quiz
-# 04 Web APIs: Code Quiz
+# Coding-Quiz
 
-## Your Task
+## Description
 
-As you proceed in your journey to becoming a full-stack web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
-
-This project entailed building a timed coding quiz with multiple-choice questions. This app runs in the browser,  and features dynamically updated HTML and CSS powered by JavaScript code. It has a clean, polished, and responsive user interface. 
-
+A timed coding quiz with multiple-choice questions. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.
 
 ## User Story
 
@@ -15,7 +11,6 @@ AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 ```
-
 
 ## Acceptance Criteria - All delivered
 
@@ -34,8 +29,8 @@ THEN I can save my initials and score
 ```
 
 ## URL and Repo Locations
-The url for the site is: https://brandyquinlan.github.io/HW04_Coding_Quiz/
-The repo is located here: https://github.com/brandyquinlan/HW04_Coding_Quiz
+The url for the site is: https://brandyquinlan.github.io/Coding-Quiz/
+The repo is located here: https://github.com/brandyquinlan/Coding-Quiz
 
 ## Screenshots of Coding Quiz
 Quiz Home Page:
@@ -56,6 +51,13 @@ Add Initials to record score:
 High Scores:
 ![Screenshot](Quiz_Scores.png)
 
+## Questions
+Please contact me with questions:
 
+Brandy Quinlan
+<br>
+Email: <brandyquinlan@gmail.com>
+<br>
+Github: [https://github.com/brandyquinlan/](https://github.com/brandyquinlan/)
 
 
